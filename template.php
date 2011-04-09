@@ -33,23 +33,23 @@ function sudan_sunrise_preprocess_page(&$vars){
   // dsm($vars);
   // set grid widths if just first sidebar
   if ($vars['page']['sidebar_first'] && !$vars['page']['sidebar_last']){
-    $vars['main_class'] = 'grid-12 push-4';
-    $vars['sb_first_class'] = 'grid-4 pull-12';
+    $vars['main_class'] = 'grid-9 push-3';
+    $vars['sb_first_class'] = 'grid-3 pull-9 alpha';
   }
   // set grid widths if just last sidebar
   if (!$vars['page']['sidebar_first'] && $vars['page']['sidebar_last']){
-    $vars['main_class'] = 'grid-12';
-    $vars['sb_last_class'] = 'grid-4';
+    $vars['main_class'] = 'grid-9';
+    $vars['sb_last_class'] = 'grid-3';
   }
   // set grid widths if both sidebars are present
   if ($vars['page']['sidebar_first'] && $vars['page']['sidebar_last']){
-    $vars['main_class'] = 'grid-8 push-4';
-    $vars['sb_first_class'] = 'grid-4 pull-8';
-    $vars['sb_last_class'] = 'grid-4';
+    $vars['main_class'] = 'grid-6 push-3';
+    $vars['sb_first_class'] = 'grid-3 pull-9';
+    $vars['sb_last_class'] = 'grid-3';
   }
   // set grid widths if no sidebars are present
   if (!$vars['page']['sidebar_first'] && !$vars['page']['sidebar_last']){
-    $vars['main_class'] = 'grid-16';
+    $vars['main_class'] = 'grid-12';
   }
   
 }

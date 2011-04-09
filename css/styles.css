@@ -1,4 +1,4 @@
-/* @override http://dev.ntrepid/sites/all/themes/ntrepidtheme/css/styles.css?lj3pwi */
+/* @override http://dev.sudan/sites/all/themes/sudan_sunrise/css/styles.css?ljd9wn */
 
 /* @group restyle the resets */
 body, select, input, textarea { 
@@ -39,7 +39,7 @@ fieldset {
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
-a, a:active, a:visited { color: #5c7dc2; text-decoration: none; }
+a, a:active, a:visited { color: #00467f; text-decoration: none; }
 
 /*  j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; } 
@@ -72,10 +72,20 @@ hr {
 /* @end */
 
 html{
-  background: #ececec;
+  background: url(../img/bg_html.gif);
 }
 body{}
 
+#container{
+  background: url(../img/bg_body.gif);
+  -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.25); 
+  -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.25); 
+  box-shadow: 5px 5px 10px rgba(0,0,0,.25); 
+  
+}
+.container-12{
+  width: 980px;
+}
 /* @group fonts */
 
 /* @end fonts */
@@ -83,22 +93,25 @@ body{}
 /* @group header */
 header{
   margin-bottom: 20px;
+  background: url(../img/bg_header.png) no-repeat left top;
+  height: 149px;
+  width: 1019px;
+  margin-left: -19px;
 }
+
 h2#logo{
-  margin-bottom: 0;
+  width: 387px;
+  margin: 52px 0 23px 25px;
 }
-/* h2#logo a{
-  background: url(../img/logo.jpg) no-repeat left top;
+
+h2#logo a{
+  background: url(../img/logo.png) no-repeat left top;
   display: block;
   height: 0;
-  padding-top: 59px;
-  margin: 23px 0 23px -12px;
+  padding-top: 52px;
   overflow: hidden;
-}*/
-h2#logo a{
-  line-height: 75px;
-  margin: 0;
 }
+
 nav#main{
   text-align: right;
 }
@@ -207,42 +220,33 @@ img.home{
 /* @end main */
 
 /* @group sidebar */
-nav#secondary{
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.15);
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.15);
-  box-shadow: 0 1px 3px rgba(0,0,0,.15);
-  margin-bottom: 25px;
-}
-nav#secondary ul{
-  margin: 0;
-}
-nav#secondary > ul{
-  border: 1px solid #cfcecb;
-  border-bottom: none;
-}
+nav#secondary{margin-bottom: 25px;}
+nav#secondary ul{margin: 0;}
+
+nav#secondary > ul{}
+
 nav#secondary ul li,
 nav#secondary ul li.expanded,
 nav#secondary ul li.collapsed,
 nav#secondary ul li.leaf {
   list-style-image:none;
   list-style-type:none;
-  background-image: none;
-  background: #f5f5f5;
-  border-bottom: 1px solid #dcdcdc;
   margin: 0;
   padding: 0;
 }
 
 nav#secondary ul li a{
-  border: 1px solid #ffffff;
-  border-bottom: none;
-  color: #252f44;
+  color: #00467f;
+  border-bottom: 1px solid #c8c5c3;
   display: block;
-  font-weight: bold;
   line-height: 1;
   height: 14px;
-  padding: 17px 14px;
+  padding: 15px 0;
   text-shadow: 0 1px 0 rgba(255,255,255,.65);
+}
+
+nav#secondary ul > li.last a{
+  border-bottom: none;
 }
 
 nav#secondary ul li.expanded > a,
@@ -251,17 +255,11 @@ nav#secondary ul li a:hover {
 }
 
 nav#secondary ul li ul{
-  border-bottom: none;
-  padding: 10px 0;
+  padding: 10px 0 0;
 }
-nav#secondary ul li li{
-  border-bottom: none !important;
-  margin-bottom: -1px;
-}
+nav#secondary ul li li{}
 nav#secondary ul li li a{
-  background-color: #eaeaea;
-  background-image: none;
-  border: none !important;
+  border: none;
   color: #777777;
   font-size: 12px;
   line-height: 1;
@@ -270,8 +268,6 @@ nav#secondary ul li li a{
 }
 nav#secondary ul li li a:hover,
 nav#secondary ul li li a.active{
-  background-image: none;
-  background-color: #eaeaea;
   color: #252f44;
 }
 /* @end */
@@ -286,12 +282,10 @@ nav#secondary ul li li a.active{
 /* @end middle */
 
 /* @group footer */
-div.full-container{
-  background: url(../img/bg_footer.png) repeat-x center top;
-  padding: 40px 0 20px;
-}
 footer{
+  clear: both;
   color:#8d929b;
+  background: url(../img/bg_footer.gif);
 }
 footer .footer_right{
   text-align: right;

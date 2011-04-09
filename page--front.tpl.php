@@ -6,7 +6,7 @@
  */
 ?>
 
-  <div id="container" class="container-16 clearfix">
+  <div id="container" class="container-12 clearfix">
 
     <header role="banner" class="clearfix">
 

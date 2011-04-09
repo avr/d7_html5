@@ -1,3 +1,5 @@
+/* @override http://dev.sudan/sites/all/themes/sudan_sunrise/css/framework/960.css?ljd9wn */
+
 /* $Id: 960.css,v 1.1.2.2.4.1 2011/01/10 21:30:12 dvessel Exp $ */
 
 /*
@@ -41,8 +43,8 @@
   display: inline;
   float: left;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .container-12 .grid-3,

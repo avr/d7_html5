@@ -1,5 +1,5 @@
-<footer class="container-16 footer-regions">
-  <div class="grid-4 clearfix">
+<footer class="container-12 footer-regions clearfix">
+  <div class="grid-2">
 
     <?php if ($page['footer_left']): ?>
         <?php print render($page['footer_left']); ?>
@@ -7,15 +7,15 @@
 
   </div>
   
-  <div class="grid-6 clearfix">
+  <div class="grid-4">
     <p>&copy; Copyright <?php echo date('Y'). " " . $site_name; ?></p>
   </div>
 
-  <div class="grid-4 clearfix">
+  <div class="grid-4">
     <p>Menu Goes Here</p>
   </div>
 
-  <div class="grid-2 clearfix">
+  <div class="grid-2">
     <?php if ($page['footer_right']): ?>
         <?php print render($page['footer_right']); ?>
     <?php endif; ?>

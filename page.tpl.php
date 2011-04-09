@@ -46,8 +46,6 @@
       </aside>
     <?php endif; ?>
 
-  </div> <!-- /#container -->
-  
-  <div class="full-container clearfix">
     <?php include('footer.inc'); ?>
-  </div>
+
+  </div> <!-- /#container -->

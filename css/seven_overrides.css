@@ -1,0 +1,16 @@
+/* @group form overrides */
+/* input.form-autocomplete,
+input.form-text,
+input.form-file,
+textarea.form-textarea,
+select.form-select {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-top-color: #999;
+  background: #fff;
+  color: #333;
+}
+input#edit-title{
+  font-size: 14px;
+}*/ 
+/* @end form overrides */

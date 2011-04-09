@@ -1,0 +1,47 @@
+name = Sudan Sunrise
+description = Custom theme for Sudan Sunrise - based on HTML5 Base & Foundation
+# screenshot = img/screenshot.jpg
+core = 7.x
+version = 1.0
+engine = phptemplate
+base theme = html5_foundation
+
+; Included theme features
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; Stylesheets. Anything within the "framework" folder will be placed before all others.
+stylesheets[all][] = css/framework/reset.css
+stylesheets[all][] = css/framework/960.css
+stylesheets[all][] = css/framework/debug.css
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/styles.css
+
+; These are necessary to drupal
+regions[page_top]       = Page top
+regions[help]           = Help
+regions[content]        = Content
+regions[page_bottom]    = Page bottom
+
+regions[sidebar_first]  = Left Sidebar
+regions[sidebar_last] = Right Sidebar
+
+regions[footer_left]    = Footer Left
+regions[footer_right]   = Footer Right
+
+; These add default settings - based on html5_foundation
+settings[ntrepidtheme_modernizr]            = 1
+settings[ntrepidtheme_use_mobile_viewport]  = 1
+settings[ntrepidtheme_mobile_viewport]      = 'width=device-width; initial-scale=1.0; maximum-scale=1.0;'
+settings[ntrepidtheme_include_chrome_frame] = 1
+settings[ntrepidtheme_breadcrumb]            = yes
+settings[ntrepidtheme_breadcrumb_separator]  = ' / '
+settings[ntrepidtheme_breadcrumb_home]       = 1
+settings[ntrepidtheme_breadcrumb_trailing]   = 0
+settings[ntrepidtheme_breadcrumb_title]      = 0
